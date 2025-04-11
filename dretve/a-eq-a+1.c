@@ -10,8 +10,6 @@
 
 #define MAX_DR 20
 long a, N, M;
-long ulaz[MAX_DR];
-long broj[MAX_DR];
 
 void *dretva (void *arg)
 {
@@ -41,9 +39,6 @@ int main (int argc, char **argv)
 		printf ("Krivi parametri: br_dretvi [1-20], br_iteracija [1-oo>\n");
 		return -1;
 	}
-
-	for (i = 0; i < N; i++)
-		ulaz[i] = broj[i] = 0;
 
 	a = 0;
 	for (i = 0; i < N; i++)
